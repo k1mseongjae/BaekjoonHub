@@ -1,150 +1,319 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/settings.css" />
-  <title>BaekjoonHub Settings</title>
-</head>
-
-<body>
-  <div class="grid container">
-    <header class="sixteen wide center aligned column">
-      <h1 id="title">
-        Baekjoon
-        <span style="color: #0078c3">Hub</span>
-        Settings
-      </h1>
-      <p class="caption">Configure your coding experience</p>
-      <p hidden id="error" class="message error"></p>
-      <p hidden id="success" class="message success"></p>
-      <p hidden id="unlink">
-        Linked the wrong repo?
-        <a href="#" id="unlink_text">Unlink</a>
-        .
-      </p>
-    </header>
-
-    <main class="sixteen wide column">
-      <!-- GitHub Repository Setup Steps -->
-      <section id="hook_mode" class="grid" style="display: none;">
-        <!-- Step 1: Repository Option -->
-        <div id="step_repo_option" class="step sixteen wide column">
-          <div class="form-card">
-            <h2 class="large header center aligned">Step 1: Repository Option</h2>
-            <div class="field">
-              <label for="type">How would you like to set up your repository?</label>
-              <select id="type">
-                <option value="">Pick an Option</option>
-                <option value="new">Create a new Private Repository</option>
-                <option value="link">Link an Existing Repository</option>
-              </select>
-            </div>
-            <div class="field">
-              <button id="next_to_repo_name" class="positive button" disabled>Next</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Step 2: Full Repository Name -->
-        <div id="step_repo_name" class="step sixteen wide column" style="display: none;">
-          <div class="form-card">
-            <h2 class="large header center aligned">Step 2: Repository Name</h2>
-            <div class="field">
-              <label for="name">Full Repository Name</label>
-              <input autocomplete="off" id="name" placeholder="username/repository-name" type="text" />
-            </div>
-            <div class="field">
-              <button id="back_to_repo_option" class="button">Back</button>
-              <button id="next_to_org_method" class="positive button" disabled>Next</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Step 3: Organization Method -->
-        <div id="step_org_method" class="step sixteen wide column" style="display: none;">
-          <div class="form-card">
-            <h2 class="large header center aligned">Step 3: Organization Method</h2>
-            <div class="field">
-              <label for="org_option">How should the repository be organized?</label>
-              <select id="org_option">
-                <option value="platform">Organize by Platform</option>
-                <option value="language">Organize by Language</option>
-                <option value="custom">Custom</option>
-              </select>
-            </div>
-            <div class="field">
-              <button id="back_to_repo_name" class="button">Back</button>
-              <button id="finish_setup" class="positive button">Finish Setup</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Show stats and settings when connected -->
-      <section id="commit_mode" class="grid" style="display: none">
-        <div class="sixteen wide column">
-          <h2 class="large header center aligned">Repository Connected</h2>
-
-          <div class="form-card">
-            <div class="field">
-              <label>Current Repository</label>
-              <p id="current_repo" class="setting-value">Loading...</p>
-            </div>
-
-            <div class="field">
-              <label>Organization Method</label>
-              <p id="current_org" class="setting-value">Loading...</p>
-            </div>
-
-            <div class="field">
-              <label>Custom Template</label>
-              <div class="toggle-switch">
-                <input type="checkbox" id="use_custom_template" />
-                <label for="use_custom_template"></label>
-              </div>
-            </div>
-
-            <div class="field" id="custom_template_field" style="display: none;">
-              <label for="custom_template">Custom Directory Template</label>
-              <input type="text" id="custom_template" placeholder="{{language}}/백준/{{level.replace(/ .*/, '')}}/{{problemId}}. {{title}}" />
-              <p class="help-text">
-                Available variables: problemId, title, level, language, problem_tags, memory, runtime, submissionTime<br>
-                Example: <code>{{language}}/백준/{{level.replace(/ .*/, '')}}/{{problemId}}. {{title}}</code>
-              </p>
-            </div>
-
-            <div class="field">
-              <label>Automatic Commits</label>
-              <div class="toggle-switch">
-                <input type="checkbox" id="auto_commit" checked />
-                <label for="auto_commit"></label>
-              </div>
-            </div>
-
-            <div class="field">
-              <label>Reset Repository Connection</label>
-              <button id="unlinkButton" class="danger button">Unlink Repository</button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="sixteen wide center aligned column">
-      <div class="small header">
-        <a target="_blank" href="https://github.com/BaekjoonHub/BaekjoonHub">
-          Star
-          <span>Baekjoon</span>
-          <span style="color: #0078c3">Hub</span>
-          on GitHub
-        </a>
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BaekjoonHub Settings</title>
+    <link rel="stylesheet" href="css/settings.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="title">🚀 BaekjoonHub</h1>
+        <p class="subtitle">GitHub 연동 설정</p>
       </div>
-    </footer>
-  </div>
 
-  <script src="settings.js" defer></script>
-</body>
+      <div class="content">
+        <!-- 연결 상태 -->
+        <div id="connectionStatus"></div>
 
+        <!-- 메시지 -->
+        <div id="errorMessage" class="message error"></div>
+        <div id="successMessage" class="message success"></div>
+
+        <!-- GitHub 저장소 설정 -->
+        <div id="setupSection" class="section">
+          <h2 class="section-title">GitHub 저장소 설정</h2>
+
+          <div class="tutorial-tip">
+            <span class="tip-icon">💡</span>
+            <strong>시작하기:</strong> GitHub 저장소를 연결하여 백준 문제 해결 기록을 자동으로 관리해보세요!
+          </div>
+
+          <div class="card">
+            <div class="form-group">
+              <label class="form-label" for="repoType">저장소 옵션</label>
+              <select id="repoType" class="form-control">
+                <option value="">옵션을 선택하세요</option>
+                <option value="new">새 저장소 생성</option>
+                <option value="existing">기존 저장소 연결</option>
+              </select>
+              <div class="help-text">새로운 저장소를 만들거나 기존 저장소와 연결할 수 있습니다.</div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="repoName">저장소 이름</label>
+              <input type="text" id="repoName" class="form-control" placeholder="username/repository-name" />
+              <select id="repoSelect" class="form-control" style="display: none;">
+                <option value="">저장소를 선택하세요</option>
+              </select>
+              <div class="help-text">형식: GitHub사용자명/저장소명 (예: john/baekjoon-solutions)</div>
+            </div>
+
+            <div class="button-group">
+              <button id="connectRepo" class="button button-primary" disabled><span>🔗</span> 연결하기</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 기본 설정 -->
+        <div id="settingsSection" class="section" style="display: none">
+          <h2 class="section-title">기본 설정</h2>
+
+          <div class="card">
+            <div class="toggle-section">
+              <div>
+                <div class="toggle-label">자동 업로드</div>
+                <div class="help-text">문제를 해결하면 자동으로 GitHub에 업로드됩니다.</div>
+              </div>
+              <label class="toggle">
+                <input type="checkbox" id="autoUpload" checked />
+                <span class="slider"></span>
+                <span class="sr-only">자동 업로드 설정</span>
+              </label>
+            </div>
+
+            <div class="toggle-section">
+              <div>
+                <div class="toggle-label">커스텀 템플릿 사용</div>
+                <div class="help-text">파일명과 폴더 구조를 커스터마이징할 수 있습니다.</div>
+              </div>
+              <label class="toggle">
+                <input type="checkbox" id="useCustomTemplate" />
+                <span class="slider"></span>
+                <span class="sr-only">커스텀 템플릿 사용 설정</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- 향상된 템플릿 설정 -->
+          <div id="customTemplateInput" style="display: none">
+            <div class="card">
+              <h3 style="margin-bottom: 20px; color: #2d3748; font-size: 18px">📁 템플릿 패턴 설정</h3>
+
+              <div class="tutorial-tip">
+                <span class="tip-icon">✨</span>
+                아래 변수 버튼을 클릭하여 원하는 폴더 구조를 만들어보세요! 필터 함수를 사용하여 텍스트를 변환할 수 있습니다.
+              </div>
+
+              <!-- 미리 설정된 템플릿 -->
+              <div class="form-group">
+                <label class="form-label">자주 사용하는 템플릿</label>
+                <div class="template-presets">
+                  <div class="preset-card" data-template="{{platform}}/{{language}}/{{removeAfterSpace(level)}}/{{problemId}}. {{safe(title)}}">
+                    <div class="preset-title">기본형 (복합)</div>
+                    <div class="preset-example">백준/Python/Silver/1000. A＋B</div>
+                  </div>
+                  <div class="preset-card" data-template="{{removeAfterSpace(level)}}/{{language}}/{{problemId}}-{{safe(title)}}">
+                    <div class="preset-title">난이도별 + 언어별</div>
+                    <div class="preset-example">Bronze/Python/1000-A+B</div>
+                  </div>
+                  <div class="preset-card" data-template="{{platform}}/{{problemId}}/{{safe(title)}}">
+                    <div class="preset-title">플랫폼별 + 문제별</div>
+                    <div class="preset-example">백준/1000/A+B</div>
+                  </div>
+                  <div class="preset-card" data-template="{{language}}/{{problemId}}-{{safe(title)}}">
+                    <div class="preset-title">언어별 단순 구조</div>
+                    <div class="preset-example">Python/1000-A+B</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 변수 버튼들 -->
+              <div class="form-group">
+                <label class="form-label">사용 가능한 변수</label>
+                <div class="template-variables">
+                  <button type="button" class="variable-btn" data-variable="{{platform}}" data-tooltip="문제를 푼 플랫폼 이름 (예: 백준, 프로그래머스)">platform</button>
+                  <button type="button" class="variable-btn" data-variable="{{problemId}}" data-tooltip="문제 번호 또는 ID (예: 1000, 42586)">problemId</button>
+                  <button type="button" class="variable-btn" data-variable="{{title}}" data-tooltip="문제 제목 (예: A+B, 괄호 변환)">title</button>
+                  <button type="button" class="variable-btn" data-variable="{{level}}" data-tooltip="문제 난이도 (예: Bronze V, Silver III)">level</button>
+                  <button type="button" class="variable-btn" data-variable="{{language}}" data-tooltip="사용한 프로그래밍 언어 (예: Python, Java)">language</button>
+                </div>
+                <div class="help-text">변수를 클릭하여 템플릿에 추가하세요. 함수와 함께 사용할 수 있습니다: {{safe(title)}}</div>
+              </div>
+
+              <!-- 필터 함수 버튼들 -->
+              <div class="form-group">
+                <label class="form-label">텍스트 변환 함수</label>
+                <div class="filter-buttons">
+                  <button type="button" class="filter-btn" data-function="safe" data-tooltip="파일명에 안전한 문자로 변환 (특수문자 → 전각)">safe()</button>
+                  <button type="button" class="filter-btn" data-function="urlSafe" data-tooltip="URL에 안전한 문자로 변환">urlSafe()</button>
+                  <button type="button" class="filter-btn" data-function="removeAfterSpace" data-tooltip="첫 번째 공백 이후 문자 제거 (Silver V → Silver)">removeAfterSpace()</button>
+                  <button type="button" class="filter-btn" data-function="trim" data-tooltip="앞뒤 공백 제거">trim()</button>
+                  <button type="button" class="filter-btn" data-function="extractNumbers" data-tooltip="숫자만 추출 (abc123def → 123)">extractNumbers()</button>
+                  <button type="button" class="filter-btn" data-function="extractLetters" data-tooltip="영문자만 추출 (abc123def → abcdef)">extractLetters()</button>
+                  <!-- <button type="button" class="filter-btn" data-function="toKebabCase" data-tooltip="kebab-case로 변환 (Hello World → hello-world)">toKebabCase()</button> -->
+                  <!-- <button type="button" class="filter-btn" data-function="toSnakeCase" data-tooltip="snake_case로 변환 (Hello World → hello_world)">toSnakeCase()</button> -->
+                  <!-- <button type="button" class="filter-btn" data-function="toCamelCase" data-tooltip="camelCase로 변환 (hello world → helloWorld)">toCamelCase()</button> -->
+                  <!-- <button type="button" class="filter-btn" data-function="toPascalCase" data-tooltip="PascalCase로 변환 (hello world → HelloWorld)">toPascalCase()</button> -->
+                  <button type="button" class="filter-btn" data-function="truncate" data-tooltip="문자열 길이 제한 (기본 50자)">truncate()</button>
+                  <button type="button" class="filter-btn" data-function="htmlEscape" data-tooltip='HTML 특수문자 이스케이프 (&lt;&gt;&amp;")'>htmlEscape()</button>
+                  <!-- <button type="button" class="filter-btn" data-function="htmlUnescape" data-tooltip="HTML 특수문자 디코딩 (&lt;&gt; → <>)">htmlUnescape()</button> -->
+                  <button type="button" class="filter-btn" data-function="base64Encode" data-tooltip="Base64로 인코딩">base64Encode()</button>
+                  <!-- <button type="button" class="filter-btn" data-function="base64Decode" data-tooltip="Base64에서 디코딩">base64Decode()</button> -->
+                  <!-- <button type="button" class="filter-btn" data-function="formatKoreanDate" data-tooltip="한국어 날짜 형식으로 변환">formatKoreanDate()</button> -->
+                  <!-- <button type="button" class="filter-btn" data-function="arrayJoin" data-tooltip="배열을 지정된 구분자로 연결 (기본: -)">arrayJoin()</button> -->
+                </div>
+                <div class="help-text">
+                  함수를 클릭하면 커서 위치에 함수가 추가됩니다. 변수를 함수로 감쌀 수 있습니다.
+                  <br /><strong>예시:</strong> safe(파일명 안전문자), removeAfterSpace(공백 이후 제거), urlSafe(URL 안전문자)
+                </div>
+              </div>
+
+              <!-- 템플릿 입력 -->
+              <div class="form-group">
+                <label class="form-label" for="templateString">템플릿 패턴</label>
+                <input type="text" id="templateString" class="form-control" placeholder="변수 및 함수 버튼을 클릭하여 템플릿을 구성하세요" />
+                <div class="help-text">
+                  슬래시(/)로 폴더를 구분합니다. 파일 확장자는 자동으로 추가됩니다.
+                  <br /><strong>예시:</strong> {{language}}/{{safe(title)}} 또는 {{removeAfterSpace(level)}}/{{problemId}}
+                </div>
+              </div>
+
+              <!-- 실시간 미리보기 -->
+              <div class="template-preview">
+                <div class="preview-label">🎯 미리보기:</div>
+                <div id="templatePreview" class="preview-result">Python/Silver/1000. A+B.py</div>
+              </div>
+
+              <!-- 템플릿 저장 버튼 -->
+              <div class="button-group" style="margin-top: 20px">
+                <button id="saveTemplate" class="button button-primary"><span>💾</span> 템플릿 저장</button>
+                <button id="resetTemplate" class="button button-secondary"><span>🔄</span> 초기화</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI 코드 리뷰 설정 -->
+        <div id="aiReviewSection" class="section" style="display: none">
+          <h2 class="section-title">AI 코드 리뷰</h2>
+
+          <div class="tutorial-tip">
+            <span class="tip-icon">🤖</span>
+            <strong>AI 리뷰:</strong> OpenAI GPT를 사용하여 코드 리뷰, 복잡도 분석, 최적화 제안을 자동으로 받아보세요!
+          </div>
+
+          <!-- AI 리뷰 활성화 토글 -->
+          <div class="card">
+            <div class="toggle-section">
+              <div>
+                <div class="toggle-label">AI 코드 리뷰 활성화</div>
+                <div class="help-text">문제 풀이 후 AI가 자동으로 코드를 분석하고 README에 리뷰를 추가합니다.</div>
+              </div>
+              <label class="toggle">
+                <input type="checkbox" id="aiReviewEnabled" />
+                <span class="slider"></span>
+                <span class="sr-only">AI 코드 리뷰 활성화</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- AI 설정 상세 (토글 활성화시 표시) -->
+          <div id="aiReviewSettings" style="display: none">
+            <!-- API 키 설정 -->
+            <div class="card">
+              <div class="form-group">
+                <label class="form-label" for="openaiToken">OpenAI API 키</label>
+                <div style="position: relative">
+                  <input
+                    type="password"
+                    id="openaiToken"
+                    class="form-control"
+                    placeholder="sk-..."
+                    style="padding-right: 70px"
+                  />
+                  <button
+                    type="button"
+                    id="toggleTokenVisibility"
+                    class="button button-secondary"
+                    style="position: absolute; right: 4px; top: 50%; transform: translateY(-50%); padding: 6px 12px; font-size: 12px"
+                  >
+                    표시
+                  </button>
+                </div>
+                <div class="help-text">
+                  API 키는 <a href="https://platform.openai.com/api-keys" target="_blank">여기</a>에서 발급받을 수
+                  있습니다. API 키는 로컬에만 저장됩니다.
+                </div>
+              </div>
+              <div class="button-group">
+                <button id="saveAISettings" class="button button-primary"><span>💾</span> API 키 저장</button>
+                <button id="testAIConnection" class="button button-secondary"><span>🔗</span> 연결 테스트</button>
+              </div>
+            </div>
+
+            <!-- 프롬프트 커스터마이징 -->
+            <div class="card">
+              <h3 style="margin-bottom: 20px; color: #2d3748; font-size: 18px">📝 프롬프트 설정</h3>
+
+              <!-- 사용 가능한 변수 -->
+              <div class="form-group">
+                <label class="form-label">사용 가능한 변수</label>
+                <div class="template-variables" id="aiPromptVariables">
+                  <button type="button" class="variable-btn" data-variable="{{title}}" data-tooltip="문제 제목">
+                    title
+                  </button>
+                  <button type="button" class="variable-btn" data-variable="{{language}}" data-tooltip="프로그래밍 언어">
+                    language
+                  </button>
+                  <button type="button" class="variable-btn" data-variable="{{code}}" data-tooltip="제출한 코드">
+                    code
+                  </button>
+                  <button
+                    type="button"
+                    class="variable-btn"
+                    data-variable="{{problemDescription}}"
+                    data-tooltip="문제 설명 (있는 경우)"
+                  >
+                    problemDescription
+                  </button>
+                </div>
+                <div class="help-text">변수를 클릭하여 프롬프트에 추가하세요.</div>
+              </div>
+
+              <!-- 프롬프트 입력 -->
+              <div class="form-group">
+                <label class="form-label" for="aiPrompt">AI 리뷰 프롬프트</label>
+                <textarea
+                  id="aiPrompt"
+                  class="form-control"
+                  rows="12"
+                  placeholder="AI에게 전달할 프롬프트를 입력하세요..."
+                  style="font-family: monospace; font-size: 13px; line-height: 1.5"
+                ></textarea>
+                <div class="help-text">AI에게 코드를 어떻게 분석하고 리뷰할지 지시합니다.</div>
+              </div>
+
+              <div class="button-group">
+                <button id="savePrompt" class="button button-primary"><span>💾</span> 프롬프트 저장</button>
+                <button id="resetPrompt" class="button button-secondary"><span>🔄</span> 기본값으로 초기화</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 저장소 관리 -->
+        <div id="managementSection" class="section" style="display: none">
+          <h2 class="section-title">저장소 관리</h2>
+
+          <div class="card">
+            <div class="form-group">
+              <label class="form-label">연결 해제</label>
+              <div class="help-text">현재 저장소와의 연결을 해제하고 새로운 저장소를 설정할 수 있습니다.</div>
+              <div class="button-group" style="margin-top: 16px">
+                <button id="unlinkRepo" class="button button-danger"><span>🔓</span> 저장소 연결 해제</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <a href="https://github.com/BaekjoonHub/BaekjoonHub" target="_blank"> ⭐ GitHub에서 BaekjoonHub 보기 </a>
+      </div>
+    </div>
+
+    <script src="settings.ts" type="module"></script>
+  </body>
 </html>
