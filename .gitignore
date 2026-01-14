@@ -26,3 +26,13 @@ tmp/
 test/temp_chrome_profile/
 *screenshot.png
 COMMIT_EDITMSG
+
+# Safari
+safari/**/build/
+safari/**/Index/
+safari/**/*.xcresult/
+safari/**/DerivedData/
+
+# Avoid checking in built extension resources (similar to dist)
+safari/BaekjoonHub/Shared (Extension)/Resources/*
+!safari/BaekjoonHub/Shared (Extension)/Resources/README.md

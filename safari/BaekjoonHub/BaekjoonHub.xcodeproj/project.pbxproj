@@ -1,0 +1,1089 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		285CAA172F163F1500539C3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285CAA162F163F1500539C3D /* AppDelegate.swift */; };
+		285CAA192F163F1500539C3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285CAA182F163F1500539C3D /* SceneDelegate.swift */; };
+		285CAA1C2F163F1500539C3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA1A2F163F1500539C3D /* LaunchScreen.storyboard */; };
+		285CAA1F2F163F1500539C3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA1D2F163F1500539C3D /* Main.storyboard */; };
+		285CAA282F163F1500539C3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285CAA272F163F1500539C3D /* AppDelegate.swift */; };
+		285CAA2B2F163F1500539C3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA292F163F1500539C3D /* Main.storyboard */; };
+		285CAA322F163F1500539C3D /* BaekjoonHub Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 285CAA312F163F1500539C3D /* BaekjoonHub Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		285CAA3C2F163F1500539C3D /* BaekjoonHub Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 285CAA3B2F163F1500539C3D /* BaekjoonHub Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		285CAA412F163F1500539C3D /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA062F163F1400539C3D /* Main.html */; };
+		285CAA422F163F1500539C3D /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA062F163F1400539C3D /* Main.html */; };
+		285CAA432F163F1500539C3D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA082F163F1400539C3D /* Icon.png */; };
+		285CAA442F163F1500539C3D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA082F163F1400539C3D /* Icon.png */; };
+		285CAA452F163F1500539C3D /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA092F163F1400539C3D /* Style.css */; };
+		285CAA462F163F1500539C3D /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA092F163F1400539C3D /* Style.css */; };
+		285CAA472F163F1500539C3D /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA0A2F163F1400539C3D /* Script.js */; };
+		285CAA482F163F1500539C3D /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA0A2F163F1400539C3D /* Script.js */; };
+		285CAA492F163F1500539C3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285CAA0B2F163F1400539C3D /* ViewController.swift */; };
+		285CAA4A2F163F1500539C3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285CAA0B2F163F1400539C3D /* ViewController.swift */; };
+		285CAA4B2F163F1500539C3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA0C2F163F1500539C3D /* Assets.xcassets */; };
+		285CAA4C2F163F1500539C3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA0C2F163F1500539C3D /* Assets.xcassets */; };
+		285CAA4D2F163F1500539C3D /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285CAA0E2F163F1500539C3D /* SafariWebExtensionHandler.swift */; };
+		285CAA4E2F163F1500539C3D /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285CAA0E2F163F1500539C3D /* SafariWebExtensionHandler.swift */; };
+		285CAA762F163F1500539C3D /* settings.js.LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA602F163F1500539C3D /* settings.js.LICENSE.txt */; };
+		285CAA772F163F1500539C3D /* authorize.js in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA612F163F1500539C3D /* authorize.js */; };
+		285CAA782F163F1500539C3D /* baekjoon.js in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA622F163F1500539C3D /* baekjoon.js */; };
+		285CAA792F163F1500539C3D /* oauth2.js in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA632F163F1500539C3D /* oauth2.js */; };
+		285CAA7A2F163F1500539C3D /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA642F163F1500539C3D /* popup.js */; };
+		285CAA7B2F163F1500539C3D /* popup.js.LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA652F163F1500539C3D /* popup.js.LICENSE.txt */; };
+		285CAA7C2F163F1500539C3D /* swexpertacademy.js.LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA662F163F1500539C3D /* swexpertacademy.js.LICENSE.txt */; };
+		285CAA7D2F163F1500539C3D /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA672F163F1500539C3D /* background.js */; };
+		285CAA7E2F163F1500539C3D /* css in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA682F163F1500539C3D /* css */; };
+		285CAA7F2F163F1500539C3D /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA692F163F1500539C3D /* popup.html */; };
+		285CAA802F163F1500539C3D /* swexpertacademy.js in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA6A2F163F1500539C3D /* swexpertacademy.js */; };
+		285CAA812F163F1500539C3D /* programmers.js in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA6B2F163F1500539C3D /* programmers.js */; };
+		285CAA822F163F1500539C3D /* programmers.js.LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA6C2F163F1500539C3D /* programmers.js.LICENSE.txt */; };
+		285CAA832F163F1500539C3D /* oauth2.js.LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA6D2F163F1500539C3D /* oauth2.js.LICENSE.txt */; };
+		285CAA842F163F1500539C3D /* goormlevel.js in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA6E2F163F1500539C3D /* goormlevel.js */; };
+		285CAA852F163F1500539C3D /* goormlevel.js.LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA6F2F163F1500539C3D /* goormlevel.js.LICENSE.txt */; };
+		285CAA862F163F1500539C3D /* rules.json in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA702F163F1500539C3D /* rules.json */; };
+		285CAA872F163F1500539C3D /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA712F163F1500539C3D /* manifest.json */; };
+		285CAA882F163F1500539C3D /* settings.html in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA722F163F1500539C3D /* settings.html */; };
+		285CAA892F163F1500539C3D /* baekjoon.js.LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA732F163F1500539C3D /* baekjoon.js.LICENSE.txt */; };
+		285CAA8A2F163F1500539C3D /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA742F163F1500539C3D /* assets */; };
+		285CAA8B2F163F1500539C3D /* settings.js in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA752F163F1500539C3D /* settings.js */; };
+		285CAA8C2F163F1500539C3D /* settings.js.LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA602F163F1500539C3D /* settings.js.LICENSE.txt */; };
+		285CAA8D2F163F1500539C3D /* authorize.js in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA612F163F1500539C3D /* authorize.js */; };
+		285CAA8E2F163F1500539C3D /* baekjoon.js in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA622F163F1500539C3D /* baekjoon.js */; };
+		285CAA8F2F163F1500539C3D /* oauth2.js in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA632F163F1500539C3D /* oauth2.js */; };
+		285CAA902F163F1500539C3D /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA642F163F1500539C3D /* popup.js */; };
+		285CAA912F163F1500539C3D /* popup.js.LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA652F163F1500539C3D /* popup.js.LICENSE.txt */; };
+		285CAA922F163F1500539C3D /* swexpertacademy.js.LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA662F163F1500539C3D /* swexpertacademy.js.LICENSE.txt */; };
+		285CAA932F163F1500539C3D /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA672F163F1500539C3D /* background.js */; };
+		285CAA942F163F1500539C3D /* css in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA682F163F1500539C3D /* css */; };
+		285CAA952F163F1500539C3D /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA692F163F1500539C3D /* popup.html */; };
+		285CAA962F163F1500539C3D /* swexpertacademy.js in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA6A2F163F1500539C3D /* swexpertacademy.js */; };
+		285CAA972F163F1500539C3D /* programmers.js in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA6B2F163F1500539C3D /* programmers.js */; };
+		285CAA982F163F1500539C3D /* programmers.js.LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA6C2F163F1500539C3D /* programmers.js.LICENSE.txt */; };
+		285CAA992F163F1500539C3D /* oauth2.js.LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA6D2F163F1500539C3D /* oauth2.js.LICENSE.txt */; };
+		285CAA9A2F163F1500539C3D /* goormlevel.js in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA6E2F163F1500539C3D /* goormlevel.js */; };
+		285CAA9B2F163F1500539C3D /* goormlevel.js.LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA6F2F163F1500539C3D /* goormlevel.js.LICENSE.txt */; };
+		285CAA9C2F163F1500539C3D /* rules.json in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA702F163F1500539C3D /* rules.json */; };
+		285CAA9D2F163F1500539C3D /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA712F163F1500539C3D /* manifest.json */; };
+		285CAA9E2F163F1500539C3D /* settings.html in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA722F163F1500539C3D /* settings.html */; };
+		285CAA9F2F163F1500539C3D /* baekjoon.js.LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA732F163F1500539C3D /* baekjoon.js.LICENSE.txt */; };
+		285CAAA02F163F1500539C3D /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA742F163F1500539C3D /* assets */; };
+		285CAAA12F163F1500539C3D /* settings.js in Resources */ = {isa = PBXBuildFile; fileRef = 285CAA752F163F1500539C3D /* settings.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		285CAA332F163F1500539C3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 285CAA002F163F1400539C3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 285CAA302F163F1500539C3D;
+			remoteInfo = "BaekjoonHub Extension (iOS)";
+		};
+		285CAA3D2F163F1500539C3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 285CAA002F163F1400539C3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 285CAA3A2F163F1500539C3D;
+			remoteInfo = "BaekjoonHub Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		285CAA542F163F1500539C3D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				285CAA322F163F1500539C3D /* BaekjoonHub Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		285CAA5B2F163F1500539C3D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				285CAA3C2F163F1500539C3D /* BaekjoonHub Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		285CAA072F163F1400539C3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		285CAA082F163F1400539C3D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		285CAA092F163F1400539C3D /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		285CAA0A2F163F1400539C3D /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		285CAA0B2F163F1400539C3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		285CAA0C2F163F1500539C3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		285CAA0E2F163F1500539C3D /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		285CAA132F163F1500539C3D /* BaekjoonHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaekjoonHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		285CAA162F163F1500539C3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		285CAA182F163F1500539C3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		285CAA1B2F163F1500539C3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		285CAA1E2F163F1500539C3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		285CAA202F163F1500539C3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		285CAA252F163F1500539C3D /* BaekjoonHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaekjoonHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		285CAA272F163F1500539C3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		285CAA2A2F163F1500539C3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		285CAA2C2F163F1500539C3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		285CAA312F163F1500539C3D /* BaekjoonHub Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BaekjoonHub Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		285CAA362F163F1500539C3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		285CAA3B2F163F1500539C3D /* BaekjoonHub Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BaekjoonHub Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		285CAA402F163F1500539C3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		285CAA602F163F1500539C3D /* settings.js.LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = settings.js.LICENSE.txt; path = ../../../dist/settings.js.LICENSE.txt; sourceTree = "<group>"; };
+		285CAA612F163F1500539C3D /* authorize.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = authorize.js; path = ../../../dist/authorize.js; sourceTree = "<group>"; };
+		285CAA622F163F1500539C3D /* baekjoon.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = baekjoon.js; path = ../../../dist/baekjoon.js; sourceTree = "<group>"; };
+		285CAA632F163F1500539C3D /* oauth2.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = oauth2.js; path = ../../../dist/oauth2.js; sourceTree = "<group>"; };
+		285CAA642F163F1500539C3D /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = ../../../dist/popup.js; sourceTree = "<group>"; };
+		285CAA652F163F1500539C3D /* popup.js.LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = popup.js.LICENSE.txt; path = ../../../dist/popup.js.LICENSE.txt; sourceTree = "<group>"; };
+		285CAA662F163F1500539C3D /* swexpertacademy.js.LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = swexpertacademy.js.LICENSE.txt; path = ../../../dist/swexpertacademy.js.LICENSE.txt; sourceTree = "<group>"; };
+		285CAA672F163F1500539C3D /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../../dist/background.js; sourceTree = "<group>"; };
+		285CAA682F163F1500539C3D /* css */ = {isa = PBXFileReference; lastKnownFileType = folder; name = css; path = ../../../dist/css; sourceTree = "<group>"; };
+		285CAA692F163F1500539C3D /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = ../../../dist/popup.html; sourceTree = "<group>"; };
+		285CAA6A2F163F1500539C3D /* swexpertacademy.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = swexpertacademy.js; path = ../../../dist/swexpertacademy.js; sourceTree = "<group>"; };
+		285CAA6B2F163F1500539C3D /* programmers.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = programmers.js; path = ../../../dist/programmers.js; sourceTree = "<group>"; };
+		285CAA6C2F163F1500539C3D /* programmers.js.LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = programmers.js.LICENSE.txt; path = ../../../dist/programmers.js.LICENSE.txt; sourceTree = "<group>"; };
+		285CAA6D2F163F1500539C3D /* oauth2.js.LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = oauth2.js.LICENSE.txt; path = ../../../dist/oauth2.js.LICENSE.txt; sourceTree = "<group>"; };
+		285CAA6E2F163F1500539C3D /* goormlevel.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = goormlevel.js; path = ../../../dist/goormlevel.js; sourceTree = "<group>"; };
+		285CAA6F2F163F1500539C3D /* goormlevel.js.LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = goormlevel.js.LICENSE.txt; path = ../../../dist/goormlevel.js.LICENSE.txt; sourceTree = "<group>"; };
+		285CAA702F163F1500539C3D /* rules.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = rules.json; path = ../../../dist/rules.json; sourceTree = "<group>"; };
+		285CAA712F163F1500539C3D /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../dist/manifest.json; sourceTree = "<group>"; };
+		285CAA722F163F1500539C3D /* settings.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = settings.html; path = ../../../dist/settings.html; sourceTree = "<group>"; };
+		285CAA732F163F1500539C3D /* baekjoon.js.LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = baekjoon.js.LICENSE.txt; path = ../../../dist/baekjoon.js.LICENSE.txt; sourceTree = "<group>"; };
+		285CAA742F163F1500539C3D /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../../../dist/assets; sourceTree = "<group>"; };
+		285CAA752F163F1500539C3D /* settings.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = settings.js; path = ../../../dist/settings.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		285CAA102F163F1500539C3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		285CAA222F163F1500539C3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		285CAA2E2F163F1500539C3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		285CAA382F163F1500539C3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		285CA9FF2F163F1400539C3D = {
+			isa = PBXGroup;
+			children = (
+				285CAA042F163F1400539C3D /* Shared (App) */,
+				285CAA0D2F163F1500539C3D /* Shared (Extension) */,
+				285CAA152F163F1500539C3D /* iOS (App) */,
+				285CAA262F163F1500539C3D /* macOS (App) */,
+				285CAA352F163F1500539C3D /* iOS (Extension) */,
+				285CAA3F2F163F1500539C3D /* macOS (Extension) */,
+				285CAA142F163F1500539C3D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		285CAA042F163F1400539C3D /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				285CAA0B2F163F1400539C3D /* ViewController.swift */,
+				285CAA0C2F163F1500539C3D /* Assets.xcassets */,
+				285CAA052F163F1400539C3D /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		285CAA052F163F1400539C3D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				285CAA062F163F1400539C3D /* Main.html */,
+				285CAA082F163F1400539C3D /* Icon.png */,
+				285CAA092F163F1400539C3D /* Style.css */,
+				285CAA0A2F163F1400539C3D /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		285CAA0D2F163F1500539C3D /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				285CAA5F2F163F1500539C3D /* Resources */,
+				285CAA0E2F163F1500539C3D /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		285CAA142F163F1500539C3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				285CAA132F163F1500539C3D /* BaekjoonHub.app */,
+				285CAA252F163F1500539C3D /* BaekjoonHub.app */,
+				285CAA312F163F1500539C3D /* BaekjoonHub Extension.appex */,
+				285CAA3B2F163F1500539C3D /* BaekjoonHub Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		285CAA152F163F1500539C3D /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				285CAA162F163F1500539C3D /* AppDelegate.swift */,
+				285CAA182F163F1500539C3D /* SceneDelegate.swift */,
+				285CAA1A2F163F1500539C3D /* LaunchScreen.storyboard */,
+				285CAA1D2F163F1500539C3D /* Main.storyboard */,
+				285CAA202F163F1500539C3D /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		285CAA262F163F1500539C3D /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				285CAA272F163F1500539C3D /* AppDelegate.swift */,
+				285CAA292F163F1500539C3D /* Main.storyboard */,
+				285CAA2C2F163F1500539C3D /* Info.plist */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		285CAA352F163F1500539C3D /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				285CAA362F163F1500539C3D /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		285CAA3F2F163F1500539C3D /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				285CAA402F163F1500539C3D /* Info.plist */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		285CAA5F2F163F1500539C3D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				285CAA602F163F1500539C3D /* settings.js.LICENSE.txt */,
+				285CAA612F163F1500539C3D /* authorize.js */,
+				285CAA622F163F1500539C3D /* baekjoon.js */,
+				285CAA632F163F1500539C3D /* oauth2.js */,
+				285CAA642F163F1500539C3D /* popup.js */,
+				285CAA652F163F1500539C3D /* popup.js.LICENSE.txt */,
+				285CAA662F163F1500539C3D /* swexpertacademy.js.LICENSE.txt */,
+				285CAA672F163F1500539C3D /* background.js */,
+				285CAA682F163F1500539C3D /* css */,
+				285CAA692F163F1500539C3D /* popup.html */,
+				285CAA6A2F163F1500539C3D /* swexpertacademy.js */,
+				285CAA6B2F163F1500539C3D /* programmers.js */,
+				285CAA6C2F163F1500539C3D /* programmers.js.LICENSE.txt */,
+				285CAA6D2F163F1500539C3D /* oauth2.js.LICENSE.txt */,
+				285CAA6E2F163F1500539C3D /* goormlevel.js */,
+				285CAA6F2F163F1500539C3D /* goormlevel.js.LICENSE.txt */,
+				285CAA702F163F1500539C3D /* rules.json */,
+				285CAA712F163F1500539C3D /* manifest.json */,
+				285CAA722F163F1500539C3D /* settings.html */,
+				285CAA732F163F1500539C3D /* baekjoon.js.LICENSE.txt */,
+				285CAA742F163F1500539C3D /* assets */,
+				285CAA752F163F1500539C3D /* settings.js */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		285CAA122F163F1500539C3D /* BaekjoonHub (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 285CAA552F163F1500539C3D /* Build configuration list for PBXNativeTarget "BaekjoonHub (iOS)" */;
+			buildPhases = (
+				285CAA0F2F163F1500539C3D /* Sources */,
+				285CAA102F163F1500539C3D /* Frameworks */,
+				285CAA112F163F1500539C3D /* Resources */,
+				285CAA542F163F1500539C3D /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				285CAA342F163F1500539C3D /* PBXTargetDependency */,
+			);
+			name = "BaekjoonHub (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "BaekjoonHub (iOS)";
+			productReference = 285CAA132F163F1500539C3D /* BaekjoonHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		285CAA242F163F1500539C3D /* BaekjoonHub (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 285CAA5C2F163F1500539C3D /* Build configuration list for PBXNativeTarget "BaekjoonHub (macOS)" */;
+			buildPhases = (
+				285CAA212F163F1500539C3D /* Sources */,
+				285CAA222F163F1500539C3D /* Frameworks */,
+				285CAA232F163F1500539C3D /* Resources */,
+				285CAA5B2F163F1500539C3D /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				285CAA3E2F163F1500539C3D /* PBXTargetDependency */,
+			);
+			name = "BaekjoonHub (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "BaekjoonHub (macOS)";
+			productReference = 285CAA252F163F1500539C3D /* BaekjoonHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		285CAA302F163F1500539C3D /* BaekjoonHub Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 285CAA512F163F1500539C3D /* Build configuration list for PBXNativeTarget "BaekjoonHub Extension (iOS)" */;
+			buildPhases = (
+				285CAA2D2F163F1500539C3D /* Sources */,
+				285CAA2E2F163F1500539C3D /* Frameworks */,
+				285CAA2F2F163F1500539C3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BaekjoonHub Extension (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "BaekjoonHub Extension (iOS)";
+			productReference = 285CAA312F163F1500539C3D /* BaekjoonHub Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		285CAA3A2F163F1500539C3D /* BaekjoonHub Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 285CAA582F163F1500539C3D /* Build configuration list for PBXNativeTarget "BaekjoonHub Extension (macOS)" */;
+			buildPhases = (
+				285CAA372F163F1500539C3D /* Sources */,
+				285CAA382F163F1500539C3D /* Frameworks */,
+				285CAA392F163F1500539C3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BaekjoonHub Extension (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "BaekjoonHub Extension (macOS)";
+			productReference = 285CAA3B2F163F1500539C3D /* BaekjoonHub Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		285CAA002F163F1400539C3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2610;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					285CAA122F163F1500539C3D = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					285CAA242F163F1500539C3D = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					285CAA302F163F1500539C3D = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					285CAA3A2F163F1500539C3D = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 285CAA032F163F1400539C3D /* Build configuration list for PBXProject "BaekjoonHub" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 285CA9FF2F163F1400539C3D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 285CAA142F163F1500539C3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				285CAA122F163F1500539C3D /* BaekjoonHub (iOS) */,
+				285CAA242F163F1500539C3D /* BaekjoonHub (macOS) */,
+				285CAA302F163F1500539C3D /* BaekjoonHub Extension (iOS) */,
+				285CAA3A2F163F1500539C3D /* BaekjoonHub Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		285CAA112F163F1500539C3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285CAA432F163F1500539C3D /* Icon.png in Resources */,
+				285CAA1C2F163F1500539C3D /* LaunchScreen.storyboard in Resources */,
+				285CAA412F163F1500539C3D /* Main.html in Resources */,
+				285CAA472F163F1500539C3D /* Script.js in Resources */,
+				285CAA4B2F163F1500539C3D /* Assets.xcassets in Resources */,
+				285CAA1F2F163F1500539C3D /* Main.storyboard in Resources */,
+				285CAA452F163F1500539C3D /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		285CAA232F163F1500539C3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285CAA442F163F1500539C3D /* Icon.png in Resources */,
+				285CAA462F163F1500539C3D /* Style.css in Resources */,
+				285CAA2B2F163F1500539C3D /* Main.storyboard in Resources */,
+				285CAA482F163F1500539C3D /* Script.js in Resources */,
+				285CAA4C2F163F1500539C3D /* Assets.xcassets in Resources */,
+				285CAA422F163F1500539C3D /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		285CAA2F2F163F1500539C3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285CAA992F163F1500539C3D /* oauth2.js.LICENSE.txt in Resources */,
+				285CAA9E2F163F1500539C3D /* settings.html in Resources */,
+				285CAA9A2F163F1500539C3D /* goormlevel.js in Resources */,
+				285CAA9C2F163F1500539C3D /* rules.json in Resources */,
+				285CAA972F163F1500539C3D /* programmers.js in Resources */,
+				285CAA9D2F163F1500539C3D /* manifest.json in Resources */,
+				285CAA942F163F1500539C3D /* css in Resources */,
+				285CAA952F163F1500539C3D /* popup.html in Resources */,
+				285CAA932F163F1500539C3D /* background.js in Resources */,
+				285CAAA02F163F1500539C3D /* assets in Resources */,
+				285CAA912F163F1500539C3D /* popup.js.LICENSE.txt in Resources */,
+				285CAA962F163F1500539C3D /* swexpertacademy.js in Resources */,
+				285CAA8D2F163F1500539C3D /* authorize.js in Resources */,
+				285CAA8E2F163F1500539C3D /* baekjoon.js in Resources */,
+				285CAA922F163F1500539C3D /* swexpertacademy.js.LICENSE.txt in Resources */,
+				285CAA9F2F163F1500539C3D /* baekjoon.js.LICENSE.txt in Resources */,
+				285CAA902F163F1500539C3D /* popup.js in Resources */,
+				285CAA8C2F163F1500539C3D /* settings.js.LICENSE.txt in Resources */,
+				285CAA982F163F1500539C3D /* programmers.js.LICENSE.txt in Resources */,
+				285CAAA12F163F1500539C3D /* settings.js in Resources */,
+				285CAA8F2F163F1500539C3D /* oauth2.js in Resources */,
+				285CAA9B2F163F1500539C3D /* goormlevel.js.LICENSE.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		285CAA392F163F1500539C3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285CAA832F163F1500539C3D /* oauth2.js.LICENSE.txt in Resources */,
+				285CAA882F163F1500539C3D /* settings.html in Resources */,
+				285CAA842F163F1500539C3D /* goormlevel.js in Resources */,
+				285CAA862F163F1500539C3D /* rules.json in Resources */,
+				285CAA812F163F1500539C3D /* programmers.js in Resources */,
+				285CAA872F163F1500539C3D /* manifest.json in Resources */,
+				285CAA7E2F163F1500539C3D /* css in Resources */,
+				285CAA7F2F163F1500539C3D /* popup.html in Resources */,
+				285CAA7D2F163F1500539C3D /* background.js in Resources */,
+				285CAA8A2F163F1500539C3D /* assets in Resources */,
+				285CAA7B2F163F1500539C3D /* popup.js.LICENSE.txt in Resources */,
+				285CAA802F163F1500539C3D /* swexpertacademy.js in Resources */,
+				285CAA772F163F1500539C3D /* authorize.js in Resources */,
+				285CAA782F163F1500539C3D /* baekjoon.js in Resources */,
+				285CAA7C2F163F1500539C3D /* swexpertacademy.js.LICENSE.txt in Resources */,
+				285CAA892F163F1500539C3D /* baekjoon.js.LICENSE.txt in Resources */,
+				285CAA7A2F163F1500539C3D /* popup.js in Resources */,
+				285CAA762F163F1500539C3D /* settings.js.LICENSE.txt in Resources */,
+				285CAA822F163F1500539C3D /* programmers.js.LICENSE.txt in Resources */,
+				285CAA8B2F163F1500539C3D /* settings.js in Resources */,
+				285CAA792F163F1500539C3D /* oauth2.js in Resources */,
+				285CAA852F163F1500539C3D /* goormlevel.js.LICENSE.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		285CAA0F2F163F1500539C3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285CAA492F163F1500539C3D /* ViewController.swift in Sources */,
+				285CAA172F163F1500539C3D /* AppDelegate.swift in Sources */,
+				285CAA192F163F1500539C3D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		285CAA212F163F1500539C3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285CAA4A2F163F1500539C3D /* ViewController.swift in Sources */,
+				285CAA282F163F1500539C3D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		285CAA2D2F163F1500539C3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285CAA4D2F163F1500539C3D /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		285CAA372F163F1500539C3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285CAA4E2F163F1500539C3D /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		285CAA342F163F1500539C3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 285CAA302F163F1500539C3D /* BaekjoonHub Extension (iOS) */;
+			targetProxy = 285CAA332F163F1500539C3D /* PBXContainerItemProxy */;
+		};
+		285CAA3E2F163F1500539C3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 285CAA3A2F163F1500539C3D /* BaekjoonHub Extension (macOS) */;
+			targetProxy = 285CAA3D2F163F1500539C3D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		285CAA062F163F1400539C3D /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				285CAA072F163F1400539C3D /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		285CAA1A2F163F1500539C3D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				285CAA1B2F163F1500539C3D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		285CAA1D2F163F1500539C3D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				285CAA1E2F163F1500539C3D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		285CAA292F163F1500539C3D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				285CAA2A2F163F1500539C3D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		285CAA4F2F163F1500539C3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		285CAA502F163F1500539C3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		285CAA522F163F1500539C3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BaekjoonHub Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.baekjoonhub.extension.Extension;
+				PRODUCT_NAME = "BaekjoonHub Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		285CAA532F163F1500539C3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BaekjoonHub Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.baekjoonhub.extension.Extension;
+				PRODUCT_NAME = "BaekjoonHub Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		285CAA562F163F1500539C3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = BaekjoonHub;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.baekjoonhub.extension;
+				PRODUCT_NAME = BaekjoonHub;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		285CAA572F163F1500539C3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = BaekjoonHub;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.baekjoonhub.extension;
+				PRODUCT_NAME = BaekjoonHub;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		285CAA592F163F1500539C3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BaekjoonHub Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.baekjoonhub.extension.Extension;
+				PRODUCT_NAME = "BaekjoonHub Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		285CAA5A2F163F1500539C3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BaekjoonHub Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.baekjoonhub.extension.Extension;
+				PRODUCT_NAME = "BaekjoonHub Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		285CAA5D2F163F1500539C3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = BaekjoonHub;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.baekjoonhub.extension;
+				PRODUCT_NAME = BaekjoonHub;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		285CAA5E2F163F1500539C3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = BaekjoonHub;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.baekjoonhub.extension;
+				PRODUCT_NAME = BaekjoonHub;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		285CAA032F163F1400539C3D /* Build configuration list for PBXProject "BaekjoonHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				285CAA4F2F163F1500539C3D /* Debug */,
+				285CAA502F163F1500539C3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		285CAA512F163F1500539C3D /* Build configuration list for PBXNativeTarget "BaekjoonHub Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				285CAA522F163F1500539C3D /* Debug */,
+				285CAA532F163F1500539C3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		285CAA552F163F1500539C3D /* Build configuration list for PBXNativeTarget "BaekjoonHub (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				285CAA562F163F1500539C3D /* Debug */,
+				285CAA572F163F1500539C3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		285CAA582F163F1500539C3D /* Build configuration list for PBXNativeTarget "BaekjoonHub Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				285CAA592F163F1500539C3D /* Debug */,
+				285CAA5A2F163F1500539C3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		285CAA5C2F163F1500539C3D /* Build configuration list for PBXNativeTarget "BaekjoonHub (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				285CAA5D2F163F1500539C3D /* Debug */,
+				285CAA5E2F163F1500539C3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 285CAA002F163F1400539C3D /* Project object */;
+}
